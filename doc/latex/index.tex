@@ -1,0 +1,29 @@
+\begin{DoxyAuthor}{Author}
+Lachlan Gunn
+\end{DoxyAuthor}
+\hypertarget{index_Introduction}{}\section{Introduction}\label{index_Introduction}
+The Synthesis library is intended initially to provide an interface to the AD9835 Direct Digital Synthesis (DDS) IC, with an eye towards eventually incorporating other methods of synthesis. This could mean interfaces to the rest of the Analog Devices DDS family, or perhaps even to SCPI-\/enabled signal generators.\hypertarget{index_Hardware}{}\section{Hardware}\label{index_Hardware}
+One will first require an AD9835 IC. This is available from Digikey and Farnell slightly below the US/AU\$15 mark, however this is a needlessly difficult route if one is merely experimenting. An alternative (taken by the author) is the breakout board sold by Sparkfun:
+
+
+\begin{DoxyItemize}
+\item Sparkfun BOB-\/09169, US\$32.57 AU\$34.95 (from Little Bird Electronics)
+\end{DoxyItemize}
+
+This is the easiest option for experimentation, as one need not provide their own oscillator or power supplies, nor solder the TSSOP package of the \hyperlink{class_a_d9835}{AD9835}. Note that this board requires a 6-\/-\/9V supply.
+
+Having acquired this device, one must connect it to their Arduino board. In order to use the samples provided, one must connect:
+
+
+\begin{DoxyItemize}
+\item FSYNC -\/$>$ Digital 8
+\item FSEL -\/$>$ Digital 7
+\item PSEL1 -\/$>$ Digital 6
+\item PSEL0 -\/$>$ Digital 5
+\item SCLK -\/$>$ Digital 4
+\item SDATA -\/$>$ Digital 3
+\end{DoxyItemize}
+
+This particular arrangement allows the board to be connected directly with the aid of 0.1" header.
+
+Having connected the hardware, one would do well to examine the examples provided. 
