@@ -17,24 +17,24 @@ Interface class for the AD9835.
 \hyperlink{class_a_d9835_afe01ac229ed5836ba172cabeb40f4ca2}{AD9835} (const int pinFSYNC, const int pinSCLK, const int pinSDATA, const int pinFSEL, const int pinPSEL1, const int pinPSEL0, const unsigned long hzMasterClockFrequency)
 \begin{DoxyCompactList}\small\item\em Constructor for the \hyperlink{class_a_d9835}{AD9835} class. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_abd6cd79aa94760c1bfbb86d77dc493d6}{begin} ()
-\begin{DoxyCompactList}\small\item\em Initialise the \hyperlink{class_a_d9835}{AD9835}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Initialise the AD9835. \end{DoxyCompactList}\item 
 \hypertarget{class_a_d9835_a8e6ec0591eac9218c379fadfacaf41af}{
 void \hyperlink{class_a_d9835_a8e6ec0591eac9218c379fadfacaf41af}{end} ()}
 \label{class_a_d9835_a8e6ec0591eac9218c379fadfacaf41af}
 
-\begin{DoxyCompactList}\small\item\em Disables the \hyperlink{class_a_d9835}{AD9835}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Disables the AD9835. \end{DoxyCompactList}\item 
 \hypertarget{class_a_d9835_a6434f761a4353f0483c5d08191400f8c}{
 void \hyperlink{class_a_d9835_a6434f761a4353f0483c5d08191400f8c}{enable} ()}
 \label{class_a_d9835_a6434f761a4353f0483c5d08191400f8c}
 
-\begin{DoxyCompactList}\small\item\em Enables the output of the \hyperlink{class_a_d9835}{AD9835}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Enables the output of the AD9835. \end{DoxyCompactList}\item 
 \hypertarget{class_a_d9835_ac9f727d658e71b63fec2a81eb60fc82b}{
 void \hyperlink{class_a_d9835_ac9f727d658e71b63fec2a81eb60fc82b}{disable} ()}
 \label{class_a_d9835_ac9f727d658e71b63fec2a81eb60fc82b}
 
-\begin{DoxyCompactList}\small\item\em Disables the output of the \hyperlink{class_a_d9835}{AD9835}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Disables the output of the AD9835. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_a69fed84e2d0491ec55a52fd2931d89b5}{setFrequencyCode} (byte frequencyRegister, unsigned long fcodeFrequency)
-\begin{DoxyCompactList}\small\item\em Sets a frequency register of the \hyperlink{class_a_d9835}{AD9835} to some frequency code. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a frequency register of the AD9835 to some frequency code. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_a9ab0533b29eb79e5106540802b406586}{setFrequencyHz} (byte frequencyRegister, unsigned long hzFrequency)
 \begin{DoxyCompactList}\small\item\em Wrapper for setFrequencyCode. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_a423c2ddd038660e60a910e3c94e77c74}{selectFrequencyRegister} (byte frequencyRegister)
@@ -42,7 +42,7 @@ void \hyperlink{class_a_d9835_a423c2ddd038660e60a910e3c94e77c74}{selectFrequency
 unsigned long \hyperlink{class_a_d9835_ad4a64d42b806f67e57eb37db913e3873}{calculateFrequencyCodeHz} (unsigned long hzFrequency)
 \begin{DoxyCompactList}\small\item\em Converts a frequency in Hertz to a frequency code. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_a8ed5f2a122cc1820e3f90b24bceba02f}{setPhaseCode} (byte phaseRegister, unsigned long pcodePhase)
-\begin{DoxyCompactList}\small\item\em Sets a phase register of the \hyperlink{class_a_d9835}{AD9835} to some phase code. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sets a phase register of the AD9835 to some phase code. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_aef6909397bd5e3b9ba25e412ba0c59b0}{setPhaseDeg} (byte phaseRegister, int degPhase)
 \begin{DoxyCompactList}\small\item\em Wrapper for setPhaseCode. \end{DoxyCompactList}\item 
 void \hyperlink{class_a_d9835_a282b2fec8aed40a0484636487df3c2b4}{selectPhaseRegister} (byte phaseRegister)
@@ -59,6 +59,10 @@ Interface class for the AD9835. \begin{Desc}
 \hyperlink{_fixed_8pde-example}{Fixed.pde}.
 
 \end{Desc}
+
+
+Definition at line 9 of file AD9835.h.
+
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -85,24 +89,28 @@ This constructor records the pin assignments used in preparation for their setup
 
 
 \begin{DoxyParams}{Parameters}
-{\em pinFSYNC} & The IO pin connected to the FSYNC pin of the \hyperlink{class_a_d9835}{AD9835}. \\
+{\em pinFSYNC} & The IO pin connected to the FSYNC pin of the AD9835. \\
 \hline
-{\em pinSCLK} & The IO pin connected to the SPI clock of the \hyperlink{class_a_d9835}{AD9835}. \\
+{\em pinSCLK} & The IO pin connected to the SPI clock of the AD9835. \\
 \hline
-{\em pinSDATA} & The IO pin connected to the SPI data pin of the \hyperlink{class_a_d9835}{AD9835}.\\
+{\em pinSDATA} & The IO pin connected to the SPI data pin of the AD9835.\\
 \hline
-{\em pinFSEL} & The IO pin connected to the frequency select pin of the \hyperlink{class_a_d9835}{AD9835}.\\
+{\em pinFSEL} & The IO pin connected to the frequency select pin of the AD9835.\\
 \hline
-{\em pinPSEL1} & The IO pin connected to phase select pin one of the \hyperlink{class_a_d9835}{AD9835}. \\
+{\em pinPSEL1} & The IO pin connected to phase select pin one of the AD9835. \\
 \hline
-{\em pinPSEL0} & The IO pin connected to phase select pin zero of the \hyperlink{class_a_d9835}{AD9835}.\\
+{\em pinPSEL0} & The IO pin connected to phase select pin zero of the AD9835.\\
 \hline
-{\em hzMasterClockFrequency} & The frequency of the \hyperlink{class_a_d9835}{AD9835} master clock in Hz.\\
+{\em hzMasterClockFrequency} & The frequency of the AD9835 master clock in Hz.\\
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
 \hyperlink{class_a_d9835_abd6cd79aa94760c1bfbb86d77dc493d6}{AD9835::begin} 
 \end{DoxySeeAlso}
+
+
+Definition at line 74 of file AD9835.cpp.
+
 
 
 \subsection{Member Function Documentation}
@@ -117,11 +125,15 @@ This constructor records the pin assignments used in preparation for their setup
 \label{class_a_d9835_abd6cd79aa94760c1bfbb86d77dc493d6}
 
 
-Initialise the \hyperlink{class_a_d9835}{AD9835}. 
+Initialise the AD9835. 
 
-The \hyperlink{class_a_d9835_abd6cd79aa94760c1bfbb86d77dc493d6}{AD9835::begin} method sets pin modes and clears the state of the \hyperlink{class_a_d9835}{AD9835}. \begin{Desc}
+The \hyperlink{class_a_d9835_abd6cd79aa94760c1bfbb86d77dc493d6}{AD9835::begin} method sets pin modes and clears the state of the AD9835. \begin{Desc}
 \item[Examples: ]\par
 \hyperlink{_fixed_8pde-example}{Fixed.pde}.\end{Desc}
+
+
+Definition at line 94 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_ad4a64d42b806f67e57eb37db913e3873}{
 \index{AD9835@{AD9835}!calculateFrequencyCodeHz@{calculateFrequencyCodeHz}}
 \index{calculateFrequencyCodeHz@{calculateFrequencyCodeHz}!AD9835@{AD9835}}
@@ -145,6 +157,10 @@ The frequency code of the desired frequency.
 \end{DoxyReturn}
 \begin{Desc}
 \item[\hyperlink{todo__todo000001}{Todo}]There is an off-\/by-\/one error here as we have rounded the frequency code down, rather than selecting the nearest. \end{Desc}
+
+
+Definition at line 270 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_a18b0df58efdb5ba15ffc406f299f869c}{
 \index{AD9835@{AD9835}!calculatePhaseCodeDeg@{calculatePhaseCodeDeg}}
 \index{calculatePhaseCodeDeg@{calculatePhaseCodeDeg}!AD9835@{AD9835}}
@@ -160,7 +176,7 @@ Converts a phase in degrees to a phase code.
 
 
 \begin{DoxyParams}{Parameters}
-{\em degPhase} & The phase to be converted.\\
+{\em degPhase} & The phase angle (in degrees) to be converted.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -168,6 +184,10 @@ The phase code of the desired phase.
 \end{DoxyReturn}
 \begin{Desc}
 \item[\hyperlink{todo__todo000002}{Todo}]There is an off-\/by-\/one error here as we have rounded the frequency code down, rather than selecting the nearest. \end{Desc}
+
+
+Definition at line 295 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_a423c2ddd038660e60a910e3c94e77c74}{
 \index{AD9835@{AD9835}!selectFrequencyRegister@{selectFrequencyRegister}}
 \index{selectFrequencyRegister@{selectFrequencyRegister}!AD9835@{AD9835}}
@@ -189,6 +209,10 @@ The selectFrequencyRegister sets the FSEL pin to the desired value, thereby sett
 \begin{Desc}
 \item[Examples: ]\par
 \hyperlink{_fixed_8pde-example}{Fixed.pde}.\end{Desc}
+
+
+Definition at line 208 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_a282b2fec8aed40a0484636487df3c2b4}{
 \index{AD9835@{AD9835}!selectPhaseRegister@{selectPhaseRegister}}
 \index{selectPhaseRegister@{selectPhaseRegister}!AD9835@{AD9835}}
@@ -202,7 +226,7 @@ The selectFrequencyRegister sets the FSEL pin to the desired value, thereby sett
 
 Select the phase register to be activated. 
 
-The selectPhaseRegister drives the PSEL0 and PSEL1 pins of the \hyperlink{class_a_d9835}{AD9835}, thereby setting the output phase to that set via setPhaseCode.
+The selectPhaseRegister drives the PSEL0 and PSEL1 pins of the AD9835, thereby setting the output phase to that set via setPhaseCode.
 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{class_a_d9835_a8ed5f2a122cc1820e3f90b24bceba02f}{setPhaseCode} 
@@ -210,6 +234,10 @@ The selectPhaseRegister drives the PSEL0 and PSEL1 pins of the \hyperlink{class_
 \begin{Desc}
 \item[Examples: ]\par
 \hyperlink{_fixed_8pde-example}{Fixed.pde}.\end{Desc}
+
+
+Definition at line 254 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_a69fed84e2d0491ec55a52fd2931d89b5}{
 \index{AD9835@{AD9835}!setFrequencyCode@{setFrequencyCode}}
 \index{setFrequencyCode@{setFrequencyCode}!AD9835@{AD9835}}
@@ -222,7 +250,7 @@ The selectPhaseRegister drives the PSEL0 and PSEL1 pins of the \hyperlink{class_
 \label{class_a_d9835_a69fed84e2d0491ec55a52fd2931d89b5}
 
 
-Sets a frequency register of the \hyperlink{class_a_d9835}{AD9835} to some frequency code. 
+Sets a frequency register of the AD9835 to some frequency code. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -231,6 +259,10 @@ Sets a frequency register of the \hyperlink{class_a_d9835}{AD9835} to some frequ
 {\em fcodeFrequency} & The frequency code to be placed in the register. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 168 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_a9ab0533b29eb79e5106540802b406586}{
 \index{AD9835@{AD9835}!setFrequencyHz@{setFrequencyHz}}
 \index{setFrequencyHz@{setFrequencyHz}!AD9835@{AD9835}}
@@ -264,6 +296,10 @@ Calculating the code is relatively slow, and so it is better to call calculateFr
 \begin{Desc}
 \item[Examples: ]\par
 \hyperlink{_fixed_8pde-example}{Fixed.pde}.\end{Desc}
+
+
+Definition at line 195 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_a8ed5f2a122cc1820e3f90b24bceba02f}{
 \index{AD9835@{AD9835}!setPhaseCode@{setPhaseCode}}
 \index{setPhaseCode@{setPhaseCode}!AD9835@{AD9835}}
@@ -276,7 +312,7 @@ Calculating the code is relatively slow, and so it is better to call calculateFr
 \label{class_a_d9835_a8ed5f2a122cc1820e3f90b24bceba02f}
 
 
-Sets a phase register of the \hyperlink{class_a_d9835}{AD9835} to some phase code. 
+Sets a phase register of the AD9835 to some phase code. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -285,6 +321,10 @@ Sets a phase register of the \hyperlink{class_a_d9835}{AD9835} to some phase cod
 {\em pcodePhase} & The phase code to be placed in the register. \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 219 of file AD9835.cpp.
+
 \hypertarget{class_a_d9835_aef6909397bd5e3b9ba25e412ba0c59b0}{
 \index{AD9835@{AD9835}!setPhaseDeg@{setPhaseDeg}}
 \index{setPhaseDeg@{setPhaseDeg}!AD9835@{AD9835}}
@@ -299,7 +339,7 @@ Sets a phase register of the \hyperlink{class_a_d9835}{AD9835} to some phase cod
 
 Wrapper for setPhaseCode. 
 
-setPhaseDeg sets a phase register of the \hyperlink{class_a_d9835}{AD9835} to an angle given in degrees. This is slower than setPhaseCode, so using calculatePhaseCodeDeg directly and caching the result is desirable.
+setPhaseDeg sets a phase register of the AD9835 to an angle given in degrees. This is slower than setPhaseCode, so using calculatePhaseCodeDeg directly and caching the result is desirable.
 
 
 \begin{DoxyParams}{Parameters}
@@ -316,6 +356,10 @@ setPhaseDeg sets a phase register of the \hyperlink{class_a_d9835}{AD9835} to an
 \begin{Desc}
 \item[Examples: ]\par
 \hyperlink{_fixed_8pde-example}{Fixed.pde}.\end{Desc}
+
+
+Definition at line 241 of file AD9835.cpp.
+
 
 
 The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
