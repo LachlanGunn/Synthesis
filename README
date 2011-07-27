@@ -1,0 +1,11 @@
+The Synthesis library is intended initially to provide an interface to
+the AD9835 Direct Digital Synthesis (DDS) IC, with an eye towards eventually
+incorporating other methods of synthesis. This could mean interfaces to the
+rest of the Analog Devices DDS family, or perhaps even to SCPI-enabled
+signal generators.
+
+For those who are not aware, the AD9835 is a 50MS/s sinusoidal DDS.  While
+it does not have the fancy multichip synchronisation and PLL functionality
+of some of the more upmarket devices that Analog Devices produce, it provides
+a quick and easy way to produce a stable sinusoid with a frequency that
+can be accurately tuned in software.
